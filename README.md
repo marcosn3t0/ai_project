@@ -73,7 +73,7 @@ pages/BasePage.ts
 
 This class centralizes shared behavior.
 
-´´´ts
+```ts
 import { Page } from '@playwright/test';
 
 export class BasePage {
@@ -130,7 +130,7 @@ export class HomePage extends BasePage {
 
 tests/example.spec.ts
 
-´´´ts
+```ts
 import { test } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
