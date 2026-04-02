@@ -8,7 +8,7 @@ Given you're a Senior QA engineer and you need to improve the architecture of a 
 
 Here's the code you need to refactor: legacy\tests\example.spec.ts: 
 
-```bash
+```ts
 import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
@@ -73,7 +73,7 @@ pages/BasePage.ts
 
 This class centralizes shared behavior.
 
-´´´bash
+´´´ts
 import { Page } from '@playwright/test';
 
 export class BasePage {
@@ -95,7 +95,7 @@ export class BasePage {
 
 pages/HomePage.ts
 
-´´´bash
+```ts
 import { expect, Locator, Page } from '@playwright/test';
 import { BasePage } from './BasePage';
 
@@ -130,7 +130,7 @@ export class HomePage extends BasePage {
 
 tests/example.spec.ts
 
-´´´bash
+´´´ts
 import { test } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 
