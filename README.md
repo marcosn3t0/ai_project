@@ -1,6 +1,6 @@
 # Goal
 
-The goal is to use CHAT GPT prompts to refactor code
+The goal is to use CHAT GPT prompts to refactor Playwright project
 
 ## Prompt used
 
