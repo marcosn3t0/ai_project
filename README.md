@@ -65,7 +65,7 @@ project-root/
 │   └── example.spec.ts
 ├── playwright.config.ts
 └── package.json
-´´´
+```
 
 ### Refactored solution
 
@@ -91,7 +91,7 @@ export class BasePage {
     return await this.page.title();
   }
 }
-´´´
+```
 
 pages/HomePage.ts
 
@@ -126,7 +126,7 @@ export class HomePage extends BasePage {
     await expect(this.installationHeading).toBeVisible();
   }
 }
-´´´
+```
 
 tests/example.spec.ts
 
@@ -152,7 +152,7 @@ test.describe('Playwright home page', () => {
   });
 
 });
-´´´
+```
 
 Why this is better
 
